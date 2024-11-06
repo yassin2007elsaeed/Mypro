@@ -1,0 +1,32 @@
+﻿<Window x:Class="Rawan.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Rawan"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="wallpapersden.com_abstract-wave-grey-duotone_2560x1435.jpg" />
+
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Label Name="Name" Content="Name" Grid.Row="0" Height="30" Width="78" HorizontalAlignment="Left" Foreground="Black"  FontSize="20px" FontFamily="Arial Black" Margin="37,31,0,156"/>
+        <Label Name="Id" Content="Id" Grid.Row="0" Height="30" Width="78" HorizontalAlignment="Left" Foreground="Black"  FontSize="20px" FontFamily="Arial Black" Margin="37,66,0,121"/>
+        <Label Name="State" Content="State" Grid.Row="0" Height="30" Width="78" HorizontalAlignment="Left" Foreground="Black"  FontSize="20px" FontFamily="Arial Black" Margin="37,101,0,86"/>
+        <TextBox Name="Name1" Grid.Row="0" Background="White" Foreground="Black" Margin="136,38,486,156"/>
+        <TextBox Name="State1" Grid.Row="0" Background="White" Foreground="Black" Margin="136,108,486,86"/>
+        <TextBox Name="Id1" Grid.Row="0" Background="White" Foreground="Black" Margin="136,73,486,121"/>
+        <DataGrid  Grid.Row = "1" Name="Datagrid" AutoGenerateColumns="True" Height="200" Margin="81,7,81,10"/>
+        <Button x:Name="Insert" Content="Insert" Width="100" Height="25" Background="LightGray" Foreground="Black" Margin="172,182,528,10" Click="Insert_Click"/>
+        <Button x:Name="Udate" Content="Update" Width="100" Height="25" Background="LightGray" Foreground="Black" Margin="277,182,423,10" Click="Udate_Click"/>
+        <Button x:Name="Del" Content="Delete" Width="100" Height="25" Background="LightGray" Foreground="Black" Margin="382,182,318,10" Click="Del_Click"/>
+        <Button x:Name="Ref" Content="Refresh" Width="100" Height="25" Background="LightGray" Foreground="Black" Margin="487,182,0,10"  HorizontalAlignment="Left" Click="Ref_Click"/>
+        <Button x:Name="ser" Content="Search" Width="100" Height="25" Background="LightGray" Foreground="Black" Margin="592,182,0,10"  HorizontalAlignment="Left" Click="ser_Click" />
+
+    </Grid>
+</Window>
